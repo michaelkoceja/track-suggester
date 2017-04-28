@@ -2,12 +2,12 @@ $(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
 
-    var question1 = $("input:radio[name=question1]:checked").val();
-    var question2 = $("input:radio[name=question2]:checked").val();
+    var questions1 = $("input:radio[name=questions1]:checked").val();
+    var questions2 = $("input:radio[name=questions2]:checked").val();
 
-    if (question1 === "filler1" && question2 === "filler1") {
-      $(".funky").hide();
-      $("#answer1").show();
+    if (questions1 === "filler1" && questions2 === "filler1") {
+      $(".answer").hide();
+      $("#css").show();
     }
   });
 });
