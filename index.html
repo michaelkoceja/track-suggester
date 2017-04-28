@@ -9,8 +9,10 @@
   </head>
   <body>
     <div class="container">
-    <h1>Interested in coding? Below are a few questions to help point you in the right direction.</h1>
-    <h2>Out of the options below, which do interests you more?</h2>
+      <div class="well">
+        <h2>Interested in coding? Below are a few questions to help point you in the right direction.</h2>
+      </div>
+      <h2>Out of the options below, which do interests you more?</h2>
       <form id="formOne">
 <!-- first set of questions -->
         <div id="questions1" class="radio">
@@ -32,27 +34,38 @@
           </p>
         </div>
 <!-- Second set of questions -->
-        <h2>This is where my second question will go</h2>
+        <h2>What do you want to do with coding?</h2>
         <div id="questions2" class="radio">
           <p>
             <input type="radio" name="questions2" value="filler1">
-            Direct user interaction
+            Optimize an HTML
           </p>
           <p>
             <input type="radio" name="questions2" value="filler2">
-            filler2
+            Create an APP
             </p>
           <p>
             <input type="radio" name="questions2" value="filler3">
-            filler3
+            Creating websites
           </p>
           <p>
             <input type="radio" name="questions2" value="filler4">
-            filler4
+            Test programs
           </p>
         </div>
-        <button type="submit" class="btn btn-primary">Submit!</button>
+        <div id="questions3" class="radio">
+          <h2>What type of person are you?</h2>
+          <p>
+            <input type="radio" name="questions3" value="filler1">
+            Introvert
+          </p>
+          <p>
+            <input type="radio" name="questions3" value="filler2">
+            Extrovert
+          </p>
+        </div>
       </form>
+      <button type="submit" class="btn btn-primary">Submit!</button>
 <!-- This will be where the user gets their answer -->
       <div id="css" class="answer">
         <p>After reviewing your submitted answers, it's recommended you take a look into the CSS/Design track. The CSS/Design track is a front-end course where students learn about making websites look appealing to the user.</p>
