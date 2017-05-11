@@ -1,5 +1,5 @@
-var add = function (num1, num2, num3, num4) {
-  return num1 + num2 + num3 + num4;
+var add = function (questionInput1, questionInput2, questionInput3) {
+  return questionInput1 + questionInput2 + questionInput3;
 };
 
 
@@ -7,48 +7,46 @@ $(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
 
-    var userInput = add(questions1, questions2, questions3);
-    var questions1 = parseInt($("input:radio[name=questions1]:checked").val());
-    var questions2 = parseInt($("input:radio[name=questions2]:checked").val());
-    var questions2 = parseInt($("input:radio[name=questions2]:checked").val());
+    var questionInput1 = parseInt($("input:radio[name=question1]:checked").val());
+    var questionInput2 = parseInt($("input:radio[name=question2]:checked").val());
+    var questionInput3 = parseInt($("input:radio[name=question3]:checked").val());
+    var userInput = add(questionInput1, questionInput2, questionInput3);
 
     if (userInput <= 5) {
       $(".answer").hide();
       $("#css").show();
     }
-    else if (userInput === 7 || userInput <= 11) {
+    else if (userInput >= 7 && userInput <= 10) {
       $(".answer").hide();
       $("#csharp").show();
 
     }
-    else if (userInput === 3 || userInput <= 9) {
+    else if (userInput <= 3 && userInput >= 8) {
       $(".answer").hide();
       $("#php").show();
 
     }
-    else {
+    else (userInput === 12)
       $(".answer").hide();
       $("#java").show();
-
-    }
   });
 });
-// var questions1 = $("input:radio[name=questions1]:checked").val();
-// var questions2 = $("input:radio[name=questions2]:checked").val();
-// var questions2 = $("input:radio[name=questions2]:checked").val();
+// var question1 = $("input:radio[name=question1]:checked").val();
+// var question2 = $("input:radio[name=question2]:checked").val();
+// var question3 = $("input:radio[name=question3]:checked").val();
 //
-// if (questions1 === "filler1" && questions2 === "filler1") {
+// if (question1 === "filler1" && question2 === "filler1") {
 //   $(".answer").hide();
 //   $("#css").show();
 // }
-// else if (questions1 === "filler1" && questions2 === "filler2") {
+// else if (question1 === "filler1" && question2 === "filler2") {
 //   $(".answer").hide();
 //   $("#csharp").show();
 // }
-// else if (questions1 === "filler1" && questions2 === "filler3") {
+// else if (question1 === "filler1" && question2 === "filler3") {
 //   $(".answer").hide();
 //   $("#php").show();
 // }
-// else if (questions1 === "filler1" && questions2 === "filler4") {
+// else if (question1 === "filler1" && question2 === "filler4") {
 //   $(".answer").hide();
 //   $("#java").show();
