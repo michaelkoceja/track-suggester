@@ -26,7 +26,7 @@ $(function() {
       $("#php").show();
 
     }
-    else (userInput === 12)
+    else (userInput > 12)
       $(".answer").hide();
       $("#java").show();
   });
