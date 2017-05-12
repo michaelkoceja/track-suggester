@@ -15,20 +15,16 @@ $(function() {
     if (userInput <= 5) {
       $(".answer").hide();
       $("#css").show();
-    }
-    else if (userInput >= 7 && userInput <= 10) {
+    } else if (userInput >= 6 && userInput <= 8) {
       $(".answer").hide();
       $("#csharp").show();
-
-    }
-    else if (userInput <= 3 && userInput >= 8) {
+    } else if (userInput = 4 && userInput >=9) {
       $(".answer").hide();
       $("#php").show();
-
-    }
-    else (userInput > 12)
+    } else if (userInput >= 10) {
       $(".answer").hide();
       $("#java").show();
+    }
   });
 });
 // var question1 = $("input:radio[name=question1]:checked").val();
